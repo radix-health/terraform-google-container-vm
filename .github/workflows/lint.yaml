@@ -63,6 +63,7 @@ jobs:
         uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: lts/*
+          check-latest: true
       - name: Install commitlint
         run: |
           npm install -D @commitlint/cli@20.2.0 @commitlint/config-conventional@20.2.0
